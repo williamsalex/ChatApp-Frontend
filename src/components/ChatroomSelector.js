@@ -11,6 +11,7 @@ export default function Selector(props) {
                     <p class = 'notSelected' onClick = {props.changeRoom}>{room.name}</p>
                     )
             }
+            <button onClick = {props.press} >+</button>
         </div>
     )
 }

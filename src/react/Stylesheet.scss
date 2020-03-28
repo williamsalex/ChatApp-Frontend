@@ -77,7 +77,13 @@ $extra-color: #fff4e3;
 }
 
 .open{
-  height: 80vh;
+  height: 72vh;
+  overflow-y: auto;
+}
+
+.editor{
+  height: 75vh;
+  overflow-y: auto;
 }
 
 .self{
@@ -99,5 +105,5 @@ $extra-color: #fff4e3;
 }
 
 .send{
-  valign: bottom;
+  v-align: bottom;
 }

@@ -3,6 +3,7 @@ import '../react/Stylesheet.scss';
 
 export default function Footer() {
     return(
-        <p class='Footer'> Built by Alex Williams </p>
+        // <p className='Footer'> Built by Alex Williams </p>
+        null
     )
 }

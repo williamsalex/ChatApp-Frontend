@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 export default function Room(props) {
-    let [message, writeMessage] = useState(0)
-
     return(
-         props.messages !== undefined ?
+         props.messages !== undefined && props.loggd !== false && props.currRoom.id !== 0 ?
+         <div className = "content">
             <div className = 'open'>
             {
                 props.messages.map(
@@ -13,16 +12,16 @@ export default function Room(props) {
                     <p className = 'other'> {props.users.find(element => element.id === message.user_id).username + ' > '+message.content}</p>
                 )
             }
+            </div>
             <hr/>
-                <div>
-                    <input  type="text" name="message" placeholder = "send message"></input>
-                    <input  type="submit"></input>
-                </div>
+            <div className = "footer">
+            <form>
+                <input onChange = {props.onChange} type="text" name="message" placeholder = "Message" value = {props.value}></input>
+                <input onClick = {props.handleSubmission} type="submit" value = 'Send'></input>
+            </form>
+            </div>
             </div>
         :
             <div></div>
     )
 }
-
-// className = 'input--send'
-// className = 'submit--send'
