@@ -1,1 +1,1 @@
-used burhanuday's electron react boilerplate
+This frontend is built using burhanuday's electron react boilerplate. It liaises with my Action Cable & Rails backend to deliver live messaging. I used Electron to allow for the app to be downloaded and used locally, however it could very easily be used on the web (as it is built in React) or ported to React Native for mobile. The UI is fairly poor, however that was due to time constraints. Despite its low quality, it does use Dart SASS and SCSS files.
